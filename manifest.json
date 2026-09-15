@@ -1,0 +1,9 @@
+{
+  "name": "ImmortalPortals",
+  "version_number": "0.1.0",
+  "website_url": "https://github.com/1264600905/valheim-immortal-portals",
+  "description": "让原版木/石传送门免疫一切伤害（怪物、火焰、雪灾、火山灰、支撑坍塌），建造锤仍可拆除。Immortal Portals: vanilla wood/stone portals are immune to all damage (monsters, fire, snow, ash, support loss) yet still removable with the build hammer.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2350"
+  ]
+}
