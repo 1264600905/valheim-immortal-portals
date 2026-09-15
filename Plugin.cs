@@ -26,7 +26,6 @@ namespace ImmortalPortals
         internal static ConfigEntry<bool> ProtectStonePortal;
         internal static ConfigEntry<bool> ProtectOtherPortals;
         internal static ConfigEntry<bool> DebugLog;
-        internal static ConfigEntry<bool> ExportPortalIcons;
 
         private Harmony _harmony;
 
@@ -45,15 +44,11 @@ namespace ImmortalPortals
                 "保护其他带 TeleportWorld 组件的传送门（如模组新增的传送门变体）。");
             DebugLog = Config.Bind("General", "DebugLog", false,
                 "输出详细调试日志（排查用，默认关闭）。");
-            ExportPortalIcons = Config.Bind("General", "ExportPortalIcons", true,
-                "启动并进入世界后，把游戏内原版传送门图标导出为 PNG 到插件目录" +
-                "（用于生成模组 icon.png，打包完成后可关闭）。");
 
             IplLog.Info($"{PluginName} v{PluginVersion} 初始化中...");
 
             _harmony = new Harmony(Guid);
             Patches.Install(_harmony);
-            PortalIconExport.Schedule();
 
             IplLog.Info($"{PluginName} v{PluginVersion} 初始化完成。" +
                         $"Enabled={Enabled.Value}, 木门={ProtectWoodPortal.Value}, " +

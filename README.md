@@ -31,7 +31,6 @@ File: `BepInEx/config/trigger.valheim.immortalportals.cfg` (ConfigurationManager
 | General | ProtectStonePortal | true | Protect the stone portal (`portal_stone`) |
 | General | ProtectOtherPortals | true | Protect other portals using the vanilla `TeleportWorld` component (modded variants) |
 | General | DebugLog | false | Log blocked damage (troubleshooting) |
-| General | ExportPortalIcons | true | Export the in-game portal build icons to the plugin folder on world load (packaging helper) |
 
 ## Installation
 
@@ -78,7 +77,6 @@ https://github.com/1264600905/valheim-immortal-portals
 | ProtectStonePortal | true | 保护石制传送门 |
 | ProtectOtherPortals | true | 保护其他使用原版 `TeleportWorld` 组件的传送门变体 |
 | DebugLog | false | 输出被拦截的伤害日志（排查用） |
-| ExportPortalIcons | true | 进入世界后把游戏内原版传送门图标导出到插件目录（打包辅助） |
 
 **联机**：伤害由对象归属者（主机 / 专用服务器）判定，服务端安装才能保证保护生效；客户端也建议安装，表现一致。
 
